@@ -1,5 +1,9 @@
 # Pdf-Mapper
-Servizio webGIS che consente la georeferenziazione e la visualizzazione geografica di una qualsiasi tavola cartografica in Pdf di cui siano note la scala, l'orientamento e il datum geodetico
+Servizio webGIS per consentire la georeferenziazione e la visualizzazione geografica di una qualsiasi tavola cartografica in Pdf di cui siano note la scala, l'orientamento e il datum geodetico
+
+
+![Schermata 2021-12-16 alle 19 44 15](https://user-images.githubusercontent.com/95703532/146431026-b9176cbb-bf35-4176-b92b-c810204e8319.png)
+
 
 # Installazione
 Scaricare l'intero repository e installarlo in una directory accessibile via web
