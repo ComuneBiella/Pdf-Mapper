@@ -148,11 +148,11 @@ map.addLayer({
 var sourceObj =map.addSource('carto', {
 'type': 'raster',
 'tiles': [
-'http://abcd.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png'
+'https://abcd.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png'
 ],
 'tileSize': 256,
 'attribution':
-'<a href="http://cartodb.com/attributions">CartoDB</a>'
+'<a href="https://cartodb.com/attributions">CartoDB</a>'
 });
 map.addLayer({
 'id': 'carto_tiles',
