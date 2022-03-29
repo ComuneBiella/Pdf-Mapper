@@ -293,7 +293,8 @@ map.on('idle', function() {
 		}
 		geobox='[['+scaledbox[0][0]+', '+scaledbox[0][1]+'],['+scaledbox[1][0]+', '+scaledbox[1][1]+'],['+scaledbox[2][0]+', '+scaledbox[2][1]+'],['+scaledbox[3][0]+', '+scaledbox[3][1]+']]';
 		$('#geolink').prop('disabled', false)
-		$('#linkdef').html("pdfmapper.html?urlima="+link+"&geobox="+geobox);
+		var root=getBaseUrl();
+		$('#linkdef').html(root+"pdfmapper.html?urlima="+link+"&geobox="+geobox);
 	  }
 	  function maponDragEnd() {
 		  maplngLat = mapmarker.getLngLat();
@@ -322,4 +323,11 @@ image.src = a1;
 image.onload = function() {
   imaW=this.width
   imaH=this.height
+}
+
+function getBaseUrl() {
+    var re = new RegExp(/^.*\//);
+    var location = re.exec(window.location.href)
+    var root=location[0].split("pdfmapper.html")
+    return root[0];
 }
